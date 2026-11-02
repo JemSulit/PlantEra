@@ -39,8 +39,10 @@ The system integrates hardware components with a web-based platform, allowing us
 - Better Auth for local user sessions, registration, and access control
 
 3. Database
+- Drizzle ORM for schema definitions and type-safe database queries
+- PostgreSQL (Local / Containerized) for persistent telemetry, hardware profiles, and local order requests
 
-4. Embedded Hardware & IoT
+5. Embedded Hardware & IoT
 - Armbian Linux OS running directly on Orange Pi Zero 3
 - Python 3.x / Node.js runtime for local sensor loops and relay actuation
 - gpiod & I2C/SPI drivers for sensor polling and relay control (mister, fan, grow light)
