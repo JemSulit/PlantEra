@@ -98,3 +98,9 @@ The system integrates hardware components with a web-based platform, allowing us
 
 
 # Project Team
+Jeremiah Sulit
+Andrei Brian Mohammad Said
+Justine Babasa
+Ranze Dimaala
+Trishtan De Roxas
+
