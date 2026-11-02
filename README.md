@@ -18,7 +18,6 @@ The system integrates hardware components with a web-based platform, allowing us
 
 # System Architecture
 
-
 # Hardware Requirements
 - Orange Pi Zero 3 controller
 - Temperature, humidity, soil, and light sensors
@@ -98,10 +97,14 @@ The system integrates hardware components with a web-based platform, allowing us
 
 
 # Project Team
-Jeremiah Sulit
-Andrei Brian Mohammad Said
-Justine Babasa
-Ranze Dimaala
-Aaron Aguda
-Trishtan De Roxas
+## Project Team
+
+| Name | Role |
+|---|---|
+| Jeremiah Sulit | Project Manager, Frontend Developer |
+| Andrei Brian Mohammad Said | Backend Developer, Hardware/IoT Developer |
+| Justine Babasa | Documentation Specialist, Quality Assurance Tester |
+| Ranze Dimaala | Frontend Developer, UI/UX Designer |
+| Aaron Aguda | Documentation Specialist |
+| Trishtan De Roxas | Documentation Specialist, System Analyst |
 
