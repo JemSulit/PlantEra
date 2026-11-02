@@ -51,7 +51,7 @@ The system integrates hardware components with a web-based platform, allowing us
 5. Local Hosting & Deployment
 - Node.js Runtime & PM2 for process management and continuous local Next.js server execution
 - Docker & Docker Compose for self-contained deployment of the web app and database on local hardware
-- Local Area Network (LAN) / mDNS for local IP and hostname access (e.g., [http://plantera.local](http://plantera.local))
+- Local Area Network (LAN) / mDNS for local IP and hostname access 
 - pnpm / npm for local dependency and package management
 
 # How it Works
