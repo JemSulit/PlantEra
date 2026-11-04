@@ -96,11 +96,7 @@ The system integrates hardware components with a web-based platform, allowing us
 - Hardware Dependency: Real-time telemetry monitoring and manual device toggles require physical connection to an active PlantEra hardware unit; frontend displays use simulated telemetry when un-paired.
 - Camera Functionality: Camera view relies on still snapshot capture intervals rather than low-latency high-FPS video streaming.
   
-# Screenshots
-
-
 # Project Team
-## Project Team
 
 | Name | Role |
 |---|---|
