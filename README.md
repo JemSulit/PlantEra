@@ -17,7 +17,7 @@ The system integrates hardware components with a web-based platform, allowing us
 9. Offline Operation – Continues monitoring and controlling the growing environment even without an internet connection.
 
 # System Architecture
-![image alt](https://github.com/JemSulit/PlantEra/blob/756f9f09a8b4d995ebdad1d5347a24d304590b0b/screenshots/System%20architecture.png)
+![image alt](https://github.com/JemSulit/PlantEra/blob/8409953ac4a8316c668cec475da98d86407e219f/screenshots/System%20Architecture.png)
 
 # Hardware Requirements
 - Orange Pi Zero 3 controller
