@@ -20,41 +20,38 @@ The system integrates hardware components with a web-based platform, allowing us
 ![image alt](https://github.com/JemSulit/PlantEra/blob/8409953ac4a8316c668cec475da98d86407e219f/screenshots/System%20Architecture.png)
 
 # Hardware Requirements
-- Orange Pi Zero 3 controller
-- Temperature, humidity, soil, and light sensors
-- Mister, dosing dumps, fans, and vent gate
-- Grow light and 1080p USB camera
-- Local device portal for offline control
+- PISOWIFI Main Board (1GB H3 Quad-Core) as the main controller
+- Temperature, humidity, soil moisture, and light sensors
+- Ultrasonic mister, dosing pump, and fans
+- Automated butterfly vent (3D-printed main body, flap, and rod)
+- Servo motors for butterfly vent operation
+- Grow lights and USB camera
+- MicroSD card for local data storage
+- Power supply modules, wiring, and electronic components
 
 # Software Requirements
-1. Frontend
-- Next.js with App Router
-- React with custom hooks
-- Tailwind CSS with CSS variables for Light & Dark mode
-- HTML5 Canvas API for particle burst animations
-- SVG Components for historical climate graphs and custom cursors
-- Lucide React for hardware interface icons
-
-2. Backend & Auth
-- Next.js Server Actions & API Routes for local telemetry ingestion and hardware toggles
-- Better Auth for local user sessions, registration, and access control
-
-3. Database
-- Drizzle ORM for schema definitions and type-safe database queries
-- PostgreSQL (Local / Containerized) for persistent telemetry, hardware profiles, and local order requests
-
-5. Embedded Hardware & IoT
-- Armbian Linux OS running directly on Orange Pi Zero 3
-- Python 3.x / Node.js runtime for local sensor loops and relay actuation
-- gpiod & I2C/SPI drivers for sensor polling and relay control (mister, fan, grow light)
-- fswebcam / OpenCV utility for periodic 1080p local snapshot capture
-- FastAPI / Express for offline hardware API endpoints
-
-5. Local Hosting & Deployment
-- Node.js Runtime & PM2 for process management and continuous local Next.js server execution
-- Docker & Docker Compose for self-contained deployment of the web app and database on local hardware
-- Local Area Network (LAN) / mDNS for local IP and hostname access 
-- pnpm / npm for local dependency and package management
+1. Operating System & Runtime
+- Armbian Linux OS (Debian 13 on Orange Pi PC)
+- Python 3.13 (Box backend, automation loop, and hardware services)
+- Node.js (node:sqlite) (Offline local website test server)
+2. Backend & API
+- Flask + Waitress WSGI (Box local web server and JSON API)
+- Cloudflare Pages Functions (Serverless web API)
+3. Frontend & User Interface
+- HTML5, CSS3, and JavaScript (ES Modules) (Box dashboard and public website)
+- Three.js (3D interactive web visuals)
+- GSAP & ScrollTrigger (Animations and scroll-based effects)
+- Lenis (Smooth scrolling)
+4. Database & Storage
+- SQLite 3 (Local box database)
+- Cloudflare D1 (Cloud SQLite database)
+- Cloudflare R2 (Camera snapshot storage)
+5. Hardware Communication & IoT
+- Linux I²C (i2c-dev) (BH1750, AHT20, ADS1115, and PCA9685 hardware communication)
+- Video4Linux2 (v4l2-ctl) (DV20 USB camera MJPEG capture service)
+6. System Services & Networking
+- systemd & udev (Isolated background services and device permission rules)
+- NetworkManager & systemd-networkd (Local WPA2 Wi-Fi hotspot and LAN connectivity)
 
 # How it Works
   PlantEra relies on an embedded hardware-to-software architecture designed to maintain an optimal propagation environment for delicate plant cuttings and seedlings:
