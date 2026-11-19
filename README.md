@@ -66,18 +66,22 @@ The system integrates hardware components with a web-based platform, allowing us
 3. Visual Progress Tracking: An internal 1080p USB camera captures periodic snapshots of the propagation space, allowing users to observe root emergence (e.g., Root Watch tracking) without opening the sealed enclosure.
 
 # Website Features
+
 | Feature | Category | Description |
 |---|---|---|
-| **Hero & Dynamic Typing Header** | Presentation | Interactive hero section featuring a dynamic typing title effect, quick hardware statistics, and floating telemetry chips showing live humidity (91%) and root growth progress (Day 9 Root Watch). |
-| **Live Environment Monitor** | Dashboard | Real-time climate overview panel rendering live readings for Humidity, Temperature, Soil, and Light status with optimal indicator tags. |
-| **Interactive Climate Graph** | Data Visualization | SVG-based trend chart visualizing 20-hour historical relative humidity data. |
-| **Manual Device Override Controls** | System Control | Interactive toggle switches allowing users to remotely turn the Mister, Fan (with rotation animation), and Grow Light on or off, accompanied by real-time status toast notifications. |
-| **No-Payment Order Request System** | E-Commerce / Leads | Pre-order request form (`/order`) capturing client details, quantity, delivery address, setup options, and custom notes without requiring upfront credit card or gateway payment. |
-| **Interactive FAQ Accordion** | Documentation | Expandable accordion answering common customer queries regarding offline capability, enclosure capacity, setup procedures, and payment workflows. |
-| **Direct Contact & Inquiry Form** | Support | Inquiry submission form sorted by topic (System Setup, Delivery, Growing Advice, Other) alongside direct contact channels (Email, Viber/Phone, Batangas location). |
-| **Interactive Visual Particle Effects** | UI/UX | Custom SVG leaf cursor state (forest green default, bright lime on hover), HTML5 Canvas circular shockwave particle bursts on pointer-down events, and scroll-triggered falling leaves animation. |
-| **Growth Visualizer Loading Screen** | UI/UX | Animated plant growth progression screen tracking load stages from seed sprouting to full bloom. |
-| **Light & Dark Theme Toggle** | Design | Theme switching between warm greenhouse paper/terracotta light mode and dark moss greenhouse mode. |
+| **Offline Dashboard & Local Hosting** | System Access | A locally hosted web application running on the Orange Pi PC, accessible through the built-in PlantEra Wi-Fi hotspot or local Ethernet without requiring an internet connection. |
+| **Live Environmental Telemetry** | Dashboard / Monitoring | Displays real-time temperature, relative humidity, soil moisture, light intensity, daily light hours, and water tank level through connected sensors, updated every 2 seconds. |
+| **Interactive Environmental Charts** | Data Visualization | Presents historical temperature, humidity, soil moisture, and light readings through interactive charts with 24-hour and multi-day viewing options. |
+| **Live USB Camera View** | Camera Monitoring | Provides a live 640×480 MJPEG camera stream for monitoring plants remotely through the local dashboard, with an on-demand Watch/Stop privacy control. |
+| **Simulated & Live Sensor Toggle** | System Control | Allows users to switch between simulated demonstration readings and actual I²C sensor readings for testing and monitoring. |
+| **Manual Equipment Controls** | Hardware Control | Allows users to manually test and control the Desk LED Lamp, Intake Fan, Ultrasonic Mister, and Peristaltic Water Pump through the dashboard using 5-second hardware test buttons. |
+| **Automation Pause Control** | System Control | Provides a Pause Automation button that temporarily suspends automatic control rules for one hour during manual inspection or maintenance. |
+| **Growth-Stage Presets** | Plant Management | Provides configurable environmental target ranges for three plant development stages: Propagation/Cuttings, Seedling, and Vegetative. |
+| **Automatic Environmental Control** | Automation | Automatically manages connected equipment based on sensor readings and configured environmental targets, including overheat priority, dead-band hysteresis, and hardware safety limits. |
+| **Historical Reports & Activity Log** | Reports / Documentation | Records environmental readings, automatic equipment actions, manual tests, and sensor events using a local SQLite database. |
+| **System Health Monitoring** | System Administration | Displays Orange Pi PC system information, including CPU temperature, CPU load, RAM usage, SD card storage, network IP addresses, and system uptime. |
+| **Owner Login & Security** | Security | Protects dashboard access through password hashing, brute-force login throttling, and session idle and expiration timeouts. |
+
 
 # Scope and Limitations
 1. Scope
