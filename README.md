@@ -20,7 +20,7 @@ The system integrates hardware components with a web-based platform, allowing us
 ![image alt](https://github.com/JemSulit/PlantEra/blob/8409953ac4a8316c668cec475da98d86407e219f/screenshots/System%20Architecture.png)
 
 # Hardware Requirements
-- PISOWIFI Main Board (1GB H3 Quad-Core) as the main controller
+- Orange Pi Pc as the main controller
 - Temperature, humidity, soil moisture, and light sensors
 - Ultrasonic mister, dosing pump, and fans
 - Automated butterfly vent (3D-printed main body, flap, and rod)
