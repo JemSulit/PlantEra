@@ -17,7 +17,7 @@ The system integrates hardware components with a web-based platform, allowing us
 9. Offline Operation – Continues monitoring and controlling the growing environment even without an internet connection.
 
 # System Architecture
-![image alt](https://github.com/JemSulit/PlantEra/blob/8409953ac4a8316c668cec475da98d86407e219f/screenshots/System%20Architecture.png)
+![image alt](https://github.com/JemSulit/PlantEra/blob/ba78d697c3558a0b24c53b8b23549281b819ef9f/screenshots/Screenshot%202026-11-24%20110058.png)
 
 # Hardware Requirements
 - Orange Pi Pc as the main controller
